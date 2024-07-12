@@ -15,7 +15,6 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="main.css">
-    <script src="serviceworker.js" />
   </head>
   <body>
     <header>
@@ -26,5 +25,10 @@
     </p>
     <a href="Idle%20Wall%20Clicker.html" class="btn btn-primary">Play Now on GitHub</a>
     <div align='center'><a href='https://www.free-website-hit-counter.com'><img src='https://www.free-website-hit-counter.com/c.php?d=9&id=174744&s=1' border='0' alt='Free Website Hit Counter'></a><br / ><small><a href='https://www.free-website-hit-counter.com' title="Free Website Hit Counter">Free website hit counter</a></small></div>
+    <script>
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('serviceworker.js')
+  }
+</script>
   </body>
 </html>
