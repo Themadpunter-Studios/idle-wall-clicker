@@ -27,6 +27,9 @@
     }
 
     abbreviateNumber(args) {
+	  if (args.n < 1000) {
+		  return args.n
+	  }
       const number = args.n;
       const decimalPoints = args.d;
       const abbreviations = ['', 'K', 'M', 'B', "Tr", "Qa", "Qi", "Sx", "Sp", "Oc", "No", "Dc", "Udc", "Ddc", "Tdc", "Qadc", "Qidc", "Sxdc", "Spdc", "Ocdc", "Nmdc", "Vg"];
